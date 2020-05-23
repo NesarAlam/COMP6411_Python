@@ -8,7 +8,9 @@ DESCRIPTION: In this assignment, you will have a chance to gain experience with 
 To record this information on disk, you will store one record per line, and separate each field with a bar symbol (‘|’). A simple 3 record database might look like this
 
 John|43|123 Apple street|514 428-3452
+
 Katya| 26|49 Queen Mary Road|514 234-7654 
+
 Ahmad|91|1888 Pepper Lane|
 
 Note that these values are very simple (first name, street address only, etc.). Also note that some basic checking must be done when values are read. For example, additional leading or trailing spaces may be present (e.g., Katya’s age field), and some fields may not have a value at all (e.g., Ahmad’s phone#). This is okay, as long as the name field is provided. If the name is missing, the record should be skipped. In any case, you should provide some basic error checking to make sure that your code doesn’t simply crash in these cases.
