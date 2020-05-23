@@ -6,8 +6,11 @@ DESCRIPTION: In this assignment, you will have a chance to gain experience with 
 2. In addition to listening for client requests, the server program must load the database and provide access to the data. The data base will be loaded from a simple, plain text disk file called data.txt. In your case, the database will hold customer records. A customer record will be a tuple with the following format
 (name, age, address, phone#)
 To record this information on disk, you will store one record per line, and separate each field with a bar symbol (‘|’). A simple 3 record database might look like this
+
 John|43|123 Apple street|514 428-3452
+
 Katya| 26|49 Queen Mary Road|514 234-7654 
+
 Ahmad|91|1888 Pepper Lane|
 Note that these values are very simple (first name, street address only, etc.). Also note that some basic checking must be done when values are read. For example, additional leading or trailing spaces may be present (e.g., Katya’s age field), and some fields may not have a value at all (e.g., Ahmad’s phone#). This is okay, as long as the name field is provided. If the name is missing, the record should be skipped. In any case, you should provide some basic error checking to make sure that your code doesn’t simply crash in these cases.
 For the assignment, you should create a text file with about 20 records. The marker will use a data set of the same general format for grading purposes. (We do not provide the testing set to students beforehand but there are no surprises in the test set – it is exactly as described above)
